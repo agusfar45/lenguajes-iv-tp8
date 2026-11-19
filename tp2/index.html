@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geolocalización e historial</title><link rel="stylesheet" href="./style.css"></head><body>
+<main><small>Lenguajes IV · TP 02</small><h1>Geolocalización e historial</h1><nav><button data-section="ubicacion">Ubicación</button><button data-section="imagen">Imagen</button></nav><section class="panel" id="location"><h2>Ubicación</h2><button id="geo">Obtener ubicación</button><output id="geo-state" aria-live="polite">Preparando la solicitud de ubicación…</output><pre id="coordinates" hidden></pre></section><section class="panel"><p>Seleccionar imagen</p><input id="file" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/avif,.img" hidden><button id="select" type="button">Seleccionar imagen</button>
+<output id="file-state" aria-live="polite"></output><dl id="details" hidden><dt>Nombre</dt><dd id="name"></dd><dt>Tipo</dt><dd id="type"></dd><dt>Tamaño</dt><dd id="size"></dd></dl><img id="preview" alt="Vista previa de la imagen seleccionada" hidden></section></main>
+<script type="module" src="./main.js"></script></body></html>

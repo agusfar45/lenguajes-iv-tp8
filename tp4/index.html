@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratorio Blob</title><link rel="stylesheet" href="./style.css"></head><body>
+<main><small>Lenguajes IV · TP 04</small><h1>Laboratorio Blob</h1><section class="panel"><h2>Archivo de texto</h2><label>Contenido<textarea id="content" maxlength="10000">Lenguajes IV: demostración de Blob.</textarea></label>
+<div class="actions"><button id="create">Crear Blob</button><button id="download" disabled>Descargar TXT</button></div><output id="info" aria-live="polite"></output></section>
+<section class="panel"><h2>Recortar por bytes</h2><div class="bounds"><label>Desde<input id="start" type="number" min="0" value="0"></label><label>Hasta, sin incluir<input id="end" type="number" min="0" value="12"></label></div>
+<div class="actions"><button id="slice" disabled>Aplicar Slice</button><button id="fragment" disabled>Descargar recorte</button></div><pre id="piece" aria-live="polite">El recorte aparecerá aquí.</pre><p>Los índices cuentan bytes UTF-8. Cortar un carácter de varios bytes puede mostrar un símbolo de reemplazo.</p></section></main>
+<script type="module" src="./main.js"></script></body></html>
